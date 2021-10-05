@@ -18,14 +18,14 @@ weatherForm.addEventListener('submit', (e) => {
     response.json().then((data) => {
         if (data.error)
         {
-            messageOne.textcontent= data.error
+            messageOne.textContent= data.error
             //console.log(data.error)
         } else {
             //console.log(data.location)
-            console.log(data.forecast)
-            messageOne.textcontent = data.location
-            messageTwo.textcontent = data.forecast
-            console.log(data.location)
+            //console.log(data.forecast)
+            messageOne.textContent = data.location
+            messageTwo.textContent = data.forecast
+            //console.log(data.location)
                }
 
     })
